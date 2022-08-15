@@ -1,0 +1,14 @@
+combinatorics
+=============
+
+This simple program calculates a constant in a combinatorial problem that arose
+in my study of an algorithm for simulating cancer incidence.
+
+Given two sequences K(m) and V(m), compute the limit
+
+A := lim_{m \rightarrow \infty} K(m) / V(m)
+
+K(1) = c, K(m+1) = (m+1) * K(m) + c + 1 - m^2
+V(1) = 1, V(m+1) = (m+1) * V(m) + 1
+
+c is an integer constant. I am interested in the cases c=2 and c=3.
